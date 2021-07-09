@@ -6,7 +6,6 @@ fav.get(srcFav);
 
 var users = new GlideRecord('sys_user');
 users.addEncodedQuery(userCriteria);
-users.setLimit(3);
 users.query();
 while(users.next()) {
   var newFav = new GlideRecord('sys_ui_bookmark');
